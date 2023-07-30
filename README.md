@@ -4,6 +4,18 @@ This is a simple calculator web application built using React. It allows users t
 
 ![Calculator Image](./src/Assets/myCalculator.png)
 
+## Technical Details
+
+<p align="center">
+  <a href="https://nodejs.org/en/blog/release/v18.15.0/"><img alt="NodeJS" src="https://img.shields.io/badge/node-18.15.0-339933?style=for-the-badge&logo=node.js&logoColor=white" /></a>
+  <a href="https://www.npmjs.com/package/npm/v/9.6.2"><img alt="NPM" src="https://img.shields.io/badge/npm-9.6.2-CB3837?style=for-the-badge&logo=npm&logoColor=white" /></a>
+  <a href="https://reactjs.org/"><img alt="Made With React" src="https://img.shields.io/badge/made%20with-react-61DAFB?style=for-the-badge&logo=react&logoColor=white" /></a>
+  <a href="https://github.com/prettier/prettier"><img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4?style=for-the-badge&logo=prettier&logoColor=white" /></a>
+  <br/>
+  <a href="https://sncalculator.netlify.app/"><img alt="Website" src="https://img.shields.io/badge/website-up-F9A825?style=for-the-badge" /></a>
+  <a href="https://sncalculator.netlify.app/"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/760e3894-259a-45fb-b2c2-bce676e71cfb/deploy-status" /></a>
+</p>
+
 ## `Features`
 
 - Addition (+): Add two numbers together.
