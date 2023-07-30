@@ -11,20 +11,22 @@ const btnValues = [
 ];
 const App = () => {
   return (
-    <div className="wrapper">
-      <Textfit className="screen" mode="single" max={70}>
-        {/* {calc.num ? calc.num : calc.res} */}
-      </Textfit>
-      <div className="buttonBox">
-        {btnValues.flat().map((btn, i) => {
-          return (
-            <Button
-              key={i}
-              className={btn === "=" ? "equals" : ""}
-              value={btn}
-            />
-          );
-        })}
+    <div className="content-body ">
+      <div className="wrapper">
+        <Textfit className="screen" mode="single" max={70}>
+          {/* {calc.num ? calc.num : calc.res} */}
+        </Textfit>
+        <div className="buttonBox">
+          {btnValues.flat().map((btn, i) => {
+            return (
+              <Button
+                key={i}
+                className={btn === "=" ? "equals" : ""}
+                value={btn}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );
