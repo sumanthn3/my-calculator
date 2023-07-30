@@ -38,8 +38,8 @@
 }
 
 .wrapper {
-  width: 340px;
-  height: 540px;
+  width: 350px;
+  height: 600px;
   padding: 10px;
   border-radius: 10px;
   background-color: #485461;
@@ -62,7 +62,7 @@
 }
 .buttonBox {
   width: 100%;
-  height: calc(100% - 110px);
+  height: 470px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
