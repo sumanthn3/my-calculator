@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import Button from "./Button/Button";
-import { btnValues, toLocaleString, removeSpaces, math } from "../utils/helper";
+import { toLocaleString, removeSpaces, math } from "../utils/helper";
 
 const zeroDivisionError = "Can't divide with 0";
 const Calculator = () => {
@@ -174,20 +174,103 @@ const Calculator = () => {
   return (
     <div className="content-body ">
       <div className="wrapper">
-        <h1 className="screen" mode="single" max={70}>
-          {calc.num ? calc.num : calc.res}
-        </h1>
+        <h1 className="screen">{calc.num ? calc.num : calc.res}</h1>
         <div className="buttonBox">
-          {btnValues.flat().map((btn, i) => {
-            return (
-              <Button
-                key={i}
-                className={btn === "=" ? "equals" : ""}
-                value={btn}
-                onClick={(e) => buttonClickHandler(e, btn)}
-              />
-            );
-          })}
+          <Button
+            className={"topRow"}
+            value={"C"}
+            onClick={(e) => buttonClickHandler(e, "C")}
+          />
+          <Button
+            className={"topRow"}
+            value={"+-"}
+            onClick={(e) => buttonClickHandler(e, "+-")}
+          />
+          <Button
+            className={"topRow"}
+            value={"%"}
+            onClick={(e) => buttonClickHandler(e, "%")}
+          />
+          <Button
+            className={"rightColumn"}
+            value={"/"}
+            onClick={(e) => buttonClickHandler(e, "/")}
+          />
+          <Button
+            className={""}
+            value={"7"}
+            onClick={(e) => buttonClickHandler(e, "7")}
+          />
+          <Button
+            className={""}
+            value={"8"}
+            onClick={(e) => buttonClickHandler(e, "8")}
+          />
+          <Button
+            className={""}
+            value={"9"}
+            onClick={(e) => buttonClickHandler(e, "9")}
+          />
+          <Button
+            className={"rightColumn"}
+            value={"X"}
+            onClick={(e) => buttonClickHandler(e, "X")}
+          />
+          <Button
+            className={""}
+            value={"4"}
+            onClick={(e) => buttonClickHandler(e, "4")}
+          />
+          <Button
+            className={""}
+            value={"5"}
+            onClick={(e) => buttonClickHandler(e, "5")}
+          />
+          <Button
+            className={""}
+            value={"6"}
+            onClick={(e) => buttonClickHandler(e, "6")}
+          />
+          <Button
+            className={"rightColumn"}
+            value={"-"}
+            onClick={(e) => buttonClickHandler(e, "-")}
+          />
+          <Button
+            className={""}
+            value={"1"}
+            onClick={(e) => buttonClickHandler(e, "1")}
+          />
+          <Button
+            className={""}
+            value={"2"}
+            onClick={(e) => buttonClickHandler(e, "2")}
+          />
+          <Button
+            className={""}
+            value={"3"}
+            onClick={(e) => buttonClickHandler(e, "3")}
+          />
+          <Button
+            className={"rightColumn"}
+            value={"+"}
+            onClick={(e) => buttonClickHandler(e, "+")}
+          />
+          <Button
+            className={"zero"}
+            value={"0"}
+            onClick={(e) => buttonClickHandler(e, "0")}
+          />
+          <Button
+            className={""}
+            value={"."}
+            onClick={(e) => buttonClickHandler(e, ".")}
+          />
+          <Button
+            className="rightColumn"
+            value={"="}
+            onClick={(e) => buttonClickHandler(e, "=")}
+          />
         </div>
       </div>
     </div>
