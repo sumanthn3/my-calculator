@@ -46,6 +46,15 @@
   background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 
+@media (max-width: 768px) {
+  .wrapper {
+      width: 90%; /* Set the width to 100% for better responsiveness on mobile */
+      height: auto; /* Adjust the height automatically based on content */
+      
+  }
+}
+
+
 .screen {
   height: 100px;
   width: 100%;
